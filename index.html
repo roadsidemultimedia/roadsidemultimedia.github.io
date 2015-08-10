@@ -7,6 +7,7 @@
 body {
     background-color: #333333;
     background-image: url(http://www.roadsidedentalmarketing.com/wp-content/uploads/grey_texture_TILE.jpg);
+    color: #ffffff;
 }
 .container {
     text-align: center;
@@ -26,5 +27,13 @@ h2 {
 <a href="http://www.roadsidedentalmarketing.com"><img src="http://www.roadsidedentalmarketing.com/wp-content/uploads/Roadside_Logo.png" /></a>
 
 </div>
+<div>
+  Copyright <span id="footerYear"></span>
+</div>
+<script>
+  window.onload = function () {
+      document.getElementById("footerYear").textContent = new Date().getFullYear();
+  };
+</script>
 </body>
 </html>
